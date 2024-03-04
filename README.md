@@ -1,0 +1,1 @@
+# nodosro-license
