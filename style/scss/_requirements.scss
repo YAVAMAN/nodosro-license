@@ -1,0 +1,55 @@
+.requirements {
+    padding: 80px 0;
+    background-color: #ecf4fe;
+    @media (max-width: 768px) {
+        padding: 40px 0;
+    }
+}
+.requirements_inner {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+.left, .right {
+    width: 100%;
+    max-width: calc((100% - 40px) / 2);
+    @media (max-width: 768px) {
+        max-width: 100%;
+    }
+}
+.requirements-list {
+    & .item {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        & .num {
+            font-family: "OpenSans";
+            font-weight: 600;
+            color: $primary;
+            font-size: 40px;
+            line-height: 1.4;
+            margin-right: 40px;
+            white-space: nowrap;
+            @media (max-width: 768px) {
+                margin-right: 10px;
+                font-size: 30px;
+            }
+        }
+        & .text {
+            font-family: "OpenSans";
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+    }
+}
+.right {
+    & img {
+        border-radius: 8px;
+        overflow: hidden;
+    }
+}

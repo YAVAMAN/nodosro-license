@@ -1,0 +1,42 @@
+.steps {
+    padding-bottom: 80px;
+    @media (max-width: 768px) {
+        padding-bottom: 40px;
+    }
+}
+.steps-list {
+    & .item {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #e0e0e0;
+        padding: 20px 0;
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 15px 0;
+        }
+        & .num {
+            width: 100%;
+            max-width: 41px;
+            font-family: "Montserrat";
+            font-weight: 600;
+            color: $primary;
+            font-size: 60px;
+            line-height: 1.4;
+            margin-right: 60px;
+            @media (max-width: 768px) {
+                margin-right: 0;
+                font-size: 40px;
+            }
+        }
+        & .text {
+            font-family: "Montserrat";
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.4;
+            & a {
+                color: $primary;
+            }
+        }
+    }
+}

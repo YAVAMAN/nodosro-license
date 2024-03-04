@@ -1,0 +1,50 @@
+#menu {
+    & .modal-dialog {
+        height: 100%;
+    }
+    & .modal-content {
+        height: 100%;
+        color: $black;
+        position: relative;
+        padding: 10px;
+        & .btn-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1;
+        }
+        & .menu-logo {
+            margin-bottom: 20px;
+        }
+        & .menu-top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            & .menu-top_nav {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                font-size: 20px;
+                font-weight: 700;
+            }
+            & .menu-top_contacts {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                font-weight: 700;
+            }
+        }
+        & .menu-mid {
+            & .menu-bttn {
+                margin-bottom: 20px;
+            }
+        }
+        & .menu-bot {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+}

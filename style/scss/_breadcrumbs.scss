@@ -1,0 +1,35 @@
+
+.breabcrumbs {
+    & .breabcrumbs_inner {
+        display: flex;
+        gap: 12px;
+        padding: 20px 0;
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    }
+    & .item {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.4;
+        white-space: nowrap;
+        @media (max-width: 768px) {
+            font-size: 12px;
+            white-space: wrap;
+        }
+        &:not(:last-child) {
+            &:after {
+                content: '/';
+                margin-left: 12px;
+                color: #c4c4c4;
+                @media (max-width: 768px) {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    & .link {
+        color: $primary;
+    }
+}

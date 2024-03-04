@@ -1,0 +1,37 @@
+.intro {
+    padding: 20px 0 80px;
+    @media (max-width: 768px) {
+        padding: 0 0 40px;
+    }
+}
+.intro-img {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    @media (max-width: 768px) {
+        margin-bottom: 20px;
+    }
+}
+.intro-title {
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: $black;
+    font-size: 64px;
+    margin-bottom: 40px;
+    @media (max-width: 768px) {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}
+.intro-text {
+    font-family: "Montserrat";
+    font-weight: 400;
+    color: $black;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    @media (max-width: 768px) {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}

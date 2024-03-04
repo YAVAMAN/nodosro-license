@@ -1,0 +1,39 @@
+.text-block {
+    padding: 80px 0;
+    @media (max-width: 768px) {
+        padding: 40px 0;
+    }
+    &.pt-none {
+        padding-top: 0;
+    }
+}
+.text-block_title {
+    margin-bottom: 40px;
+    @media (max-width: 768px) {
+        margin-bottom: 25px;
+    }
+    & br {
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+.text-block_text_inner {
+    display: flex;
+    gap: 40px;
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    & .text-block_text {
+        width: 100%;
+        max-width: calc((100% - 40px) / 2);
+        @media (max-width: 768px) {
+            max-width: 100%;
+        }
+    }
+}
+.text-block_text {
+    font-size: 14px;
+    line-height: 1.4;
+}
